@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="len"></p>
+    <script>
+        var a="hello world ,\"good morning\",hello world ";
+        var l=a.length;
+        var b=a.indexOf("world");
+        var v=a.lastIndexOf("world");
+        var g=a.lastIndexOf("you");
+        var h=a.indexOf("you");
+        var s=a.search("good");
+        var st=a.slice(6,18);
+        var stu=a.slice(-9,-1);
+        var stur=a.substr(0);
+        var re=a.replace("hello","dark");
+        var ore=a.replace(/hello/i,"dark");
+        var ore=a.replace(/hello/i,"dark");
+
+
+
+
+        document.getElementById("len").innerHTML=b+"<br>"+v +" <br>"+l+"<br>"+g+"<br>"+h+"<br>"+s+"<br>"+st +"<br>"+stu+"<br>"+stur+"<br>"+re;
+   
+    </script>
+</body>
+</html>

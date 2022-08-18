@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="color" id="col" onchange="colO();">
+    changing backgroundcolor 
+    <hr>
+    <div id="di" style="width:200px; height: 200px; background-color: rgb(146, 61, 61);"> </div>
+    <input type="color" id="co" onchange="col();" style="margin-top:10px;">
+<hr>
+<p id="ch" ondblclick="ond()" onclick="on()">onclick & ondblclick</p>
+<hr>
+<p> </p>
+</body>
+</html>
+<script>
+function colO(){
+    var a=document.getElementById('col').value;
+    document.body.style.backgroundColor=a;
+}
+function col(){
+    var a=document.getElementById('co').value;
+   document.getElementById('di').style.backgroundColor=a;
+}
+function on(){
+    document.getElementById('ch').style.fontSize="50px";
+}
+function ond(){
+    document.getElementById('ch').style.fontSize="20px";
+}
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> hello world 1</p>
+    <P class="gol">hello world 2</P>
+    <p id="d">hello world 3</p>
+</body>
+<script src="jquery-3.6.0.js"></script>
+<script>
+    $(function(){
+        $('p').click(function(){
+            $(this).hide();
+        })
+        // $(".gol").click(function(){
+        //     $(this).hide();
+        // })
+        // $("#d").dblclick(function(){
+        //     $(this).hide();
+        // })
+    })
+</script>
+</html>

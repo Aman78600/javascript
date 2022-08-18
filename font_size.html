@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onclick="document.getElementById('h1').style.fontSize='20px'">chang a font size</h1><br>
+    <p id="lsize">this is chang</p>
+   <button type="button" onclick="document.getElementById('lsize').style.fontSize='100px'";>
+    <!-- <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">  -->
+        changing size clik on me</button>
+    <button type="button" onclick="document.getElementById('lsize').style.fontSize='30px'";>
+    changing font size larg to smoll so clik me</button><br>
+    <button type="button" onclick="document.getElementById('lsize').style.display='none'">
+    hide to font click me</button>
+    <button type="button" onclick="document.getElementById('lsize').style.display='block'">
+    click to displye content</button>
+    <input type="number" id="nu" onchange="num()">
+</body>
+</html>
+<script>
+    function num(){
+        var a=document.getElementById('nu').value;
+        b=a+"px"
+        document.getElementById('lsize').style.fontSize=b;
+    }
+</script>
